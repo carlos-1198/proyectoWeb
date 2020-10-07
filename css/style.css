@@ -41,11 +41,21 @@
 }
 
 .img-insta{
-	width: 55px;
+	width: 54px;
 }
 .img-twit{
-	width: 35px;
+	width: 32px;
 }
 .img-face{
 	width: 38px;
+}
+
+#categorias{
+	border:1.5px solid #212529;
+	width: auto;
+	height: auto;
+}
+
+#categorias a{
+	color: #212529;
 }
