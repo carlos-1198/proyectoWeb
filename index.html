@@ -72,7 +72,7 @@
                 <div class="row row-cols-1 row-cols-s-1 row-cols-md-2 row-cols-lg-4">
                   <div class="col mb-4">
                     <div class="card">
-                      <img src="imagenes/producto1.jpg" class="card-img-top" alt="Iphone X">
+                      <a data-toggle="modal" data-target="#modalProducto"><img src="imagenes/producto1.jpg"  class="card-img-top" alt="Iphone X"></a>
                       <div class="card-body">
                         <p class="card-text">Producto 1</p>
                       </div>
@@ -135,26 +135,17 @@
                     </div>
                   </div>
                 </div>
-                <div>
-                  <a class="btn btn-success offset-4" href="listado_productos.html">Ver todos los productos</a>
+                <div class="text-center">
+                  <a class="btn btn-success" href="listado_productos.html">Ver todos los productos</a>
                 </div>              
               </div>
             </div>
             <div id="aside" class="col-md-4 pt-4 pb-4">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              <div>
-                <button class="btn btn-success offset-4">Siguenos</button>
+              <div class="text-center pt-4">
+                <iframe width="320" height="440" src="http://instagram.com/p/CGBE2XBltdc/embed" frameborder="0"></iframe>
+              </div>
+              <div class="text-center pt-4">
+                <button class="btn btn-success">Siguenos</button>
               </div> 
             </div>
           </div>
@@ -178,13 +169,83 @@
                 <img class="img-twit" src="imagenes/twitter.png" alt="twitter">
               </div>
               <div class="col">
-                <button class="btn btn-success">Contactanos</button>
+                <a class="btn btn-success" data-toggle="modal" data-target="#modal-btn-siguenos">Contactanos</a>
               </div>   
             </div>
           </div>
         </div>
       </footer>
     <!--/FOOTER-->
+
+    <!--MODALIMGPRODUCTO-->
+    <div id="modalProducto" class="modal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5>Producto 1</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="row modal-body">
+            <div class="col-6">
+              <img id="imgModalProducto" src="imagenes/pear.png">
+            </div>
+            <div class="col-6">
+              <p>Categoria</p>
+              <p>Descripcion</p>
+              <a class="offset-8" href="">más</a>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/MODALIMGPRODUCTO-->
+
+    <!--MODALBTNSIGUENOS-->
+    <div id="modal-btn-siguenos" class="modal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Formulario de Contacto</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group row">
+                <label for="staticEmail" class="col-sm-2 col-form-label">Nombre</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" placeholder="Digite su Nombre">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" placeholder="Digite su email">
+                </div>
+              </div>
+              <div class="form-group row col-12">
+                <textarea name="text"  class="form-control form-control-lg" placeholder="Escribe aqui tu duda o sugerencia"></textarea> 
+              </div>
+              <div class="form-group row">
+                <button class="btn btn-success offset-9">Enviar</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/MODALBTNSIGUENOS-->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

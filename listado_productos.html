@@ -97,7 +97,7 @@
               <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4">
                 <div class="col mb-4">
                   <div class="card">
-                    <img src="imagenes/producto1.jpg" class="card-img-top" alt="Iphone X">
+                    <a href=""><img src="imagenes/producto1.jpg"  class="card-img-top" alt="Iphone X"></a>
                     <div class="card-body">
                       <p class="card-text">Producto 1</p>
                     </div>
@@ -225,8 +225,8 @@
                 </div>
               </div>
             </div>
-            <div>
-              <button class="btn btn-success offset-4 offset-md-5">Ver mas productos</button>
+            <div class="text-center">
+              <button class="btn btn-success">Ver mas productos</button>
             </div> 
           </div> 
         </div>    
@@ -243,19 +243,58 @@
               <p>Télefono de contacto: +57 3188069485</p>
             </div>
             <div class="col-4 text-right">
-              <div class="d-inline ">   
+              <div class="d-inline">   
                 <img class="img-face" src="imagenes/face.png" alt="facebook">
                 <img class="img-insta" src="imagenes/insta.png" alt="instagram">
                 <img class="img-twit" src="imagenes/twitter.png" alt="twitter">
               </div>
               <div class="col">
-                <button class="btn btn-success">Contactanos</button>
+                <a class="btn btn-success" data-toggle="modal" data-target="#modal-btn-siguenos">Contactanos</a>
               </div>   
             </div>
           </div>
         </div>
       </footer>
     <!--/FOOTER-->
+
+
+    <!--MODALBTNSIGUENOS-->
+    <div id="modal-btn-siguenos" class="modal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Formulario de Contacto</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group row">
+                <label for="staticEmail" class="col-sm-2 col-form-label">Nombre</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" placeholder="Digite su Nombre">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" placeholder="Digite su email">
+                </div>
+              </div>
+              <div class="form-group row col-12">
+                <textarea name="text"  class="form-control form-control-lg" placeholder="Escribe aqui tu duda o sugerencia"></textarea> 
+              </div>
+              <div class="form-group row">
+                <button class="btn btn-success offset-9">Enviar</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/MODALBTNSIGUENOS-->
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
