@@ -12,13 +12,14 @@
   </head>              
   <body>
     <!--HEADER-->
-      <nav id="header" class="navbar navbar-dark bg-dark">
+      <nav id="header" class="navbar-dark bg-dark">
         <div class="container">
-          <div class="row mr-auto">
-            <a class="navbar-brand" href="#">
-            <img src="imagenes/pear.png" class="d-inline-block align-top" alt="" loading="lazy">
-            </a>
+          <div class="row pt-2 pb-2">
+            <a class="navbar-brand" href="index.html"><img src="imagenes/pear.png" class="d-inline-block align-top" alt="" loading="lazy"></a>
             <h1>Pear</h1>
+            <div class="pt-2 ml-auto">
+              <a class="btn btn-success" data-toggle="modal" data-target="#modal-btn-log">Ingresar</a>
+            </div>
           </div>
         </div>       
       </nav>
@@ -136,16 +137,17 @@
                   </div>
                 </div>
                 <div class="text-center">
-                  <a class="btn btn-success" href="listado_productos.html">Ver todos los productos</a>
+                  <a class="btn btn-success" href="html/listado_productos.html">Ver todos los productos</a>
                 </div>              
               </div>
             </div>
             <div id="aside" class="col-md-4 pt-4 pb-4">
               <div class="text-center pt-4">
-                <iframe width="320" height="440" src="http://instagram.com/p/CGBE2XBltdc/embed" frameborder="0"></iframe>
+                <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+                <div class="elfsight-app-01bbacc5-21a2-4662-8cf5-27cee50c61de"></div>
               </div>
-              <div class="text-center pt-4">
-                <button class="btn btn-success">Siguenos</button>
+              <div class="text-center">
+                <a href="https://www.instagram.com/xiaomi.colombia/" target="_blank" class="btn btn-success">Siguenos</a>
               </div> 
             </div>
           </div>
@@ -164,9 +166,9 @@
             </div>
             <div class="col-4 text-right">
               <div class="d-inline ">   
-                <img class="img-face" src="imagenes/face.png" alt="facebook">
-                <img class="img-insta" src="imagenes/insta.png" alt="instagram">
-                <img class="img-twit" src="imagenes/twitter.png" alt="twitter">
+                <a href="https://www.facebook.com/XiaomiColombia/" target="_blank"><img class="img-face" src="imagenes/face.png" alt="facebook"></a>
+                <a href="https://www.instagram.com/xiaomi.colombia/" target="_blank"><img class="img-insta" src="imagenes/insta.png" alt="instagram"></a>
+                <a href="https://twitter.com/XiaomiColombia?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><img class="img-twit" src="imagenes/twitter.png" alt="twitter"></a>
               </div>
               <div class="col">
                 <a class="btn btn-success" data-toggle="modal" data-target="#modal-btn-siguenos">Contactanos</a>
@@ -246,6 +248,43 @@
       </div>
     </div>
     <!--/MODALBTNSIGUENOS-->
+
+    <!--LOGINMODAL-->
+    <div id="modal-btn-log" class="modal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Log</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+             <form>
+              <div class="form-group">
+                <label for="usuario-log">Usuario</label>
+                <input type="text" class="form-control" id="usuario-log">
+              </div>
+              <div class="form-group">
+                <label for="password-log">Password</label>
+                <input type="password" class="form-control" id="password-log" aria-describedby="consejo-contra">
+                <small id="consejo-contra" class="form-text text-muted">Asegurate de verificar las mayusculas.</small>
+              </div>
+              <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="recuerdame-log">
+                <label class="form-check-label" for="recuerdame-log">Recuerdame</label>
+              </div>
+              <div class="form-group text-center">
+                <button type="submit" class="btn btn-primary">Registrarse</button>
+                <button type="submit" class="btn btn-success">Ingresar</button>
+              </div>
+            </form>         
+          </div>
+        </div>
+      </div>
+    </div>
+     
+    <!--/LOGINMODAL-->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
